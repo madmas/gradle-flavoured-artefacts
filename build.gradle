@@ -1,0 +1,14 @@
+
+subprojects {
+	apply plugin: 'java'	
+	repositories {
+		jcenter()
+	    mavenCentral()
+	}
+}
+
+configure([project(":lib-implA"),project(":lib-implB"),project(":lib-implC"), project(":application")]) {
+    dependencies {
+        compile project(':lib-interface')
+    }
+}
