@@ -1,0 +1,4 @@
+= flavoured artefacts with Gradle
+
+An example project to demonstrate how to use Gradle to build several artefacts with differend dependencies for one application.
+
