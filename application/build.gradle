@@ -9,7 +9,6 @@ apply plugin: 'com.github.johnrengelman.shadow'
 mainClassName = 'com.karakun.sample.Application'
 
 ext {
-    // These URLs are used when starting the tests via Gradle on the CLI
     variants = [
             [name: "customerA"],
             [name: "customerB"],
@@ -39,6 +38,9 @@ variants.each { variant ->
         classifier = "${variant.name}"
         from sourceSets.main.output
         configurations = [project.configurations."${variant.name}compile"]
+        manifest {
+            attributes 'Main-Class': mainClassName
+        }
     }
     shadowJar.dependsOn("${variant.name}ShadowJar")
 }
