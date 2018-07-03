@@ -1,4 +1,24 @@
-= flavoured artefacts with Gradle
+= Flavoured Artefacts with Gradle
 
-An example project to demonstrate how to use Gradle to build several artefacts with differend dependencies for one application.
+An example project to demonstrate how to use Gradle to build several artefacts with different dependencies for one application.
+
+== Explaining article
+
+Please find the article that explains what this example project demonstrates at link:https://karakun.github.com/2018/06/29/flavoured-artefacts-with-gradle.html[Karakun Developer Hub / Gradle: flavoured artefacts from a multi-module build]
+
+== How to see it in action
+
+* checkout / clone
+* `./gradlew application:shadowJar`
+* `java -jar build/libs/application-customerC.jar` +
+
+     s = Implementation or customer C
+
+* `java -jar build/libs/application-customerB.jar` +
+
+     s = Implementation or customer B
+
+* `java -jar build/libs/application-customerA.jar` +
+
+     s = Implementation or customer A
 
