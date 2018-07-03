@@ -4,7 +4,7 @@ An example project to demonstrate how to use Gradle to build several artefacts w
 
 == Explaining article
 
-Please find the article that explains what this example project demonstrates at link:https://karakun.github.com/2018/06/29/flavoured-artefacts-with-gradle.html[Karakun Developer Hub / Gradle: flavoured artefacts from a multi-module build]
+Please find the article that explains what this example project demonstrates at link:https://karakun.github.io/2018/06/29/flavoured-artefacts-with-gradle.html[Karakun Developer Hub / Gradle: flavoured artefacts from a multi-module build]
 
 == How to see it in action
 
